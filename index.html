@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Ultimate Rock Paper Scissors</h1>
+        <stats>
+            <p id="winstats"></p>
+            <p id="action"></p>
+            <label for="gametype">Game Type:</label>
+            <select id="gametype" value="rps">
+                <option value="rps">Rock Paper Scissors (default)</option>
+                <option value="rpsls">Rock Paper Scissors Lizard Spock (RPSLS)</option>
+                <option value="rps7">Water Air Sponge+ (RPS-7)</option>
+                <option value="rps9">Water Human Gun+ (RPS-9)</option>
+                <option value="rps11">Water Wolf Devil+ (RPS-11)</option>
+                <option value="rps15">Lightning Dragon Tree+ (RPS-15)</option>
+                <option value="rps25">Dynamite Nuke Alien+ (RPS-25)</option>
+                <option value="rps101">Helicopter Tank Sky+ (RPS-101)</option>
+            </select>
+        </stats>
+        <game>
+            <you></you>
+            <hr>
+            <opponent></opponent>
+        </game>
+    </main>
+
+    <script src="js/types/rps.js"></script>
+    <script src="js/types/rpsls.js"></script>
+    <script src="js/types/rps7.js"></script>
+    <script src="js/types/rps9.js"></script>
+    <script src="js/types/rps11.js"></script>
+    <script src="js/types/rps15.js"></script>
+    <script src="js/types/rps25.js"></script>
+    <script src="js/types/rps101.js"></script>
+
+    <script src="js/rps.js"></script>
+</body>
+
+</html>
