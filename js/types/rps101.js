@@ -1,3 +1,5 @@
+// rock paper scissors 101
+// still needs verbs
 const RPS101 = {
     'rock': {
         'name': 'rock',

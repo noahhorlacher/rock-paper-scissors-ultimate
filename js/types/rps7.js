@@ -1,3 +1,4 @@
+// rock paper scissors 7
 const RPS7 = {
     rock: {
         name: 'rock',

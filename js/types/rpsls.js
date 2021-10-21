@@ -1,3 +1,4 @@
+// rock paper scissors lizard spock
 const RPSLS = {
     rock: {
         name: 'rock',

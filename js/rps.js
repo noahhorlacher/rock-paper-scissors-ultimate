@@ -1,6 +1,7 @@
-// relevant elements
+// relevant HTML elements
 const UI = {
     stats: document.querySelector('#winstats'),
+    you: document.querySelector('you'),
     opponent: document.querySelector('opponent'),
     types: document.querySelector('#gametype'),
     actiontxt: document.querySelector('#action')
@@ -31,7 +32,7 @@ const GAMETYPES = {
 function init() {
     // reset state and UI
     state = [0, 0, 0]
-    document.querySelectorAll('you btn')?.forEach(e => e.remove())
+    UI.you.querySelectorAll('btn')?.forEach(e => e.remove())
 
     // set game type
     gametype = GAMETYPES[UI.types.value]
@@ -40,7 +41,7 @@ function init() {
     Object.keys(gametype).forEach(key => {
         let b = document.createElement('btn')
         b.innerText = gametype[key].symbol
-        document.querySelector('you').append(b)
+        UI.you.append(b)
         b.addEventListener('click', e => match(key))
     })
 
